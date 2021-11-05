@@ -2,7 +2,7 @@
 
 /* Include a bogus .interp section in libfoo.so (NIXPKGS-98).
    Borrowed from Glibc. */
-const char __invoke_dynamic_linker__[] __attribute__ ((section ("__DATA",".interp"))) = "/foo/bar";
+const char __invoke_dynamic_linker__[] __attribute__ ((section ("__DATA,.interp"))) = "/foo/bar";
 
 int bar();
 
