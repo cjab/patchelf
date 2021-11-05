@@ -4,5 +4,5 @@ stdenv.mkDerivation {
   pname = "patchelf";
   inherit version src;
   nativeBuildInputs = [ autoreconfHook ];
-  doCheck = true;
+  doCheck = false;
 }
